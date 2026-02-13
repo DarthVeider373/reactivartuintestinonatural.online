@@ -12,7 +12,7 @@
     var a = document.createElement("script");
     a.setAttribute("async", "");
     a.setAttribute("defer", "");
-    a.setAttribute("src", "[https://cdn.utmify.com.br/scripts/pixel/pixel.js](https://cdn.utmify.com.br/scripts/pixel/pixel.js)");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
     document.head.appendChild(a);
   </script>
 
@@ -222,7 +222,7 @@
       text-align: center;
     }
 
-    /* ✅ Delay VTurb: escondido até o segundo 442 */
+    /* ✅ Delay VTurb: escondido até o segundo 816 */
     .esconder {
       display: none;
     }
@@ -275,7 +275,7 @@
 
 <body>
 
-  <div class="topStrip" id="topStrip"></div>
+  <div class="topStrip">SÓ HOJE, EXCLUSIVO...</div>
 
   <main class="wrap">
     <section class="hero">
@@ -290,7 +290,7 @@
 
       <!-- ✅ Script de delay (cole logo abaixo do embed do player) -->
       <script>
-        var delaySeconds = 820;
+        var delaySeconds = 816;
 
         function initVturbDelay() {
           var player = document.querySelector("vturb-smartplayer");
@@ -370,22 +370,14 @@
       </nav>
 
       <p class="legal">
+        Este site não faz parte do site do Youtube ou da Youtube Inc. Além disso, este site NÃO é endossado pelo Youtube de nenhuma forma. YOUTUBE é uma marca registrada da YOUTUBE, Inc.
+        <br><br>
         Este site não é afiliado ao Facebook, Instagram ou à Meta Platforms, Inc. Conteúdo educacional.
         <br><br>
         Todos os direitos reservados © 2026
       </p>
     </div>
   </footer>
-
-  <script>
-    (function () {
-      const dias = ['DOMINGO', 'SEGUNDA-FEIRA', 'TERÇA-FEIRA', 'QUARTA-FEIRA', 'QUINTA-FEIRA', 'SEXTA-FEIRA', 'SÁBADO'];
-      const meses = ['JANEIRO', 'FEVEREIRO', 'MARÇO', 'ABRIL', 'MAIO', 'JUNHO', 'JULHO', 'AGOSTO', 'SETEMBRO', 'OUTUBRO', 'NOVEMBRO', 'DEZEMBRO'];
-      const hoje = new Date();
-      document.getElementById('topStrip').textContent =
-        `SÓ HOJE, ${dias[hoje.getDay()]}, ${hoje.getDate()} DE ${meses[hoje.getMonth()]}`;
-    })();
-  </script>
 
 </body>
 
